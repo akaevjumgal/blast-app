@@ -15,7 +15,7 @@ export default class HomeScene extends BaseScene {
               <div className="col-md-6 col-lg-5 mb-5 mb-md-0">
                 <h1>Мы компания <b>ВЗЛЁТ</b></h1>
                 <p>РАБОТА ЗАГРАНИЦЕЙ ДЛЯ КЫРГЫЗСТАНЦЕВ</p>
-                <Link className="button button-hero mt-4" to="#">Подробнее</Link>
+                <Link className="button button-hero mt-4" to={'/about'}>Подробнее</Link>
               </div>
               <div className="col-md-6 col-lg-7 col-xl-6 offset-xl-1">
                 <img className="img-fluid" src="img/home/hero-img.png" alt="" />
@@ -418,77 +418,6 @@ export default class HomeScene extends BaseScene {
           </div>
         </section>
 
-        <section className="section-padding bg-gray">
-          <div className="container">
-            <div className="section-intro text-center pb-90px">
-              <img className="section-intro-img" src="img/home/section-icon.png" alt="" />
-              <h2>From our Blog</h2>
-              <p>Fowl have fruit moveth male they are that place you will lesser</p>
-            </div>
-
-            <div className="row">
-              <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div className="card-blog">
-                  <img className="card-img rounded-0" src="img/blog/blog-1.png" alt="" />
-                  <div className="card-blog-body">
-                    <Link to="#">
-                      <h4>Forest responds to consultation smoking in al fresco.</h4>
-                    </Link>>
-                    <ul className="card-blog-info">
-                      <li><Link to="#"><span className="align-middle"><i className="ti-notepad"></i></span>Jan 03,
-                                        2018</Link>>
-                      </li>
-                      <li><Link to="#"><span className="align-middle"><i className="ti-comments-smiley"></i></span>03
-                                        Comments</Link>></li>
-                    </ul>
-                    <p>Varius metus morbi ferme libero vehic on porta malesuada ut interdu estmales torquent
-                                vehicula parturient </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div className="card-blog">
-                  <img className="card-img rounded-0" src="img/blog/blog-2.png" alt="" />
-                  <div className="card-blog-body">
-                    <Link to="#">
-                      <h4>Forest responds to consultation smoking in al fresco.</h4>
-                    </Link>>
-                    <ul className="card-blog-info">
-                      <li><Link to="#"><span className="align-middle"><i className="ti-notepad"></i></span>Jan 03,
-                                        2018</Link>>
-                      </li>
-                      <li><Link to="#"><span className="align-middle"><i className="ti-comments-smiley"></i></span>03
-                                        Comments</Link>></li>
-                    </ul>
-                    <p>Varius metus morbi ferme libero vehic on porta malesuada ut interdu estmales torquent
-                                vehicula parturient </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div className="card-blog">
-                  <img className="card-img rounded-0" src="img/blog/blog-3.png" alt="" />
-                  <div className="card-blog-body">
-                    <Link to="#">
-                      <h4>Forest responds to consultation smoking in al fresco.</h4>
-                    </Link>>
-                    <ul className="card-blog-info">
-                      <li><Link to="#"><span className="align-middle"><i className="ti-notepad"></i></span>Jan 03,
-                                        2018</Link>>
-                      </li>
-                      <li><Link to="#"><span className="align-middle"><i className="ti-comments-smiley"></i></span>03
-                                        Comments</Link>></li>
-                    </ul>
-                    <p>Varius metus morbi ferme libero vehic on porta malesuada ut interdu estmales torquent
-                                vehicula parturient </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <FooterSection />
       </div>
     )
