@@ -1,13 +1,9 @@
-import { createBrowserHistory } from 'history';
 import React, { Component } from 'react';
-import { Router } from 'react-router';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import SceneRegister from './common/scene.register';
 import AboutScene from './scenes/about';
 import HomeScene from './scenes/main';
 import Navigation from './sections/navigation';
-
-const HISTORY = createBrowserHistory()
 
 export default class SceneInitializer extends Component {
 
@@ -17,20 +13,20 @@ export default class SceneInitializer extends Component {
       name: 'Главная',
       title: 'Главная',
       exact: true,
-      component: <HomeScene history={HISTORY} />
+      component: <HomeScene />
     },
     {
       link: '/about',
       name: 'О нас',
       title: 'О нас',
       exact: true,
-      component: <AboutScene history={HISTORY} />
+      component: <AboutScene />
     }
   ])
 
   render() {
     return (
-      <Router history={HISTORY}>
+      <BrowserRouter>
         <Navigation routes={this.sceneRegisterService.get()} />
 
         {this.sceneRegisterService.get().map((scene, index) => (
@@ -40,7 +36,7 @@ export default class SceneInitializer extends Component {
             </Route>
           </Switch>
         ))}
-      </Router>
+      </BrowserRouter>
     )
   }
 
