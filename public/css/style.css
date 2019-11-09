@@ -78,6 +78,10 @@ h3,
   font-size: 20px;
 }
 
+.border-app-primary {
+  border: 2px solid var(--indigo);
+}
+
 .primary-text {
   color: #6059f6;
 }

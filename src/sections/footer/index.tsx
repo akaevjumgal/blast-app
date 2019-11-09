@@ -19,10 +19,10 @@ const FooterSection = () => (
             <div className="row">
               <div className="col">
                 <ul>
-                  <li><Link to="#">Главная</Link>></li>
-                  <li><Link to="#">О нас</Link>></li>
-                  <li><Link to="#">Вакансии</Link>></li>
-                  <li><Link to="#">Страны</Link>></li>
+                  <li><Link to="#">Главная</Link></li>
+                  <li><Link to="#">О нас</Link></li>
+                  <li><Link to="#">Вакансии</Link></li>
+                  <li><Link to="#">Страны</Link></li>
                 </ul>
               </div>
             </div>
